@@ -87,8 +87,18 @@ $(document).ready(function() {
         trigger: containerScrollTrigger,
         start: '50% 50%',
         markers: true,
-        end: 8000,
+        end: 5000,
         scrub: true,
         pin: true
     })
+});
+
+
+$(document).ready(function() {
+    // Enabled tooltip
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    // Enabled popover
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 });

@@ -14,7 +14,12 @@
     font-size: 1.06rem;
     font-weight: 400;
 }
-
+.bg-grey {
+    background-color: #ebebeb;
+}
+.bg-grey-light {
+    background-color: #f5f5f5;
+}
 
 .main-nav-container {
     position: relative;
@@ -280,6 +285,41 @@
            height: 200px;
            object-fit: cover;
            filter: grayscale(1);
+        }
+    }
+}
+
+.section-footer {
+    color: #ffffff;
+    .d-block img {
+        height: 40px
+    }
+    .map {
+        position: relative;
+        img {
+            width: 297px;
+            height: 143px;
+        }
+        .fa-map-marker-alt {
+            cursor: pointer;
+            position: absolute;
+            font-size: 1rem;
+            text-align: center;
+            color: #fefefe;
+            transition: .3s;
+            &:hover {
+                color: rgb(144, 255, 249);
+                font-size: 1.2rem
+            }
+        }
+        #marker-1 {
+            top: 42px; left: 52px;
+        }
+        #marker-2 {
+            top: 109px; left: 83px;
+        }
+        #marker-3 {
+            top: 24px; left: 157px;
         }
     }
 }
