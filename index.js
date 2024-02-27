@@ -55,38 +55,38 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
 
 
 // Gsap clients
-$(document).ready(function() {
+$(document).ready(function () {
     // Calcular el ancho de '.container-words-1 .words'
     var containerWidth1 = $('.container-words-1 .words').width();
     var containerWidth2 = $('.container-words-2 .words').width();
     var containerWidth3 = $('.container-logos .logos').width();
-    
+
     var windowWidth = $(window).width();
 
     gsap.registerPlugin(ScrollTrigger);
     const containerScrollTrigger = document.querySelector(".section-clients")
     const sectionsTimeline = gsap.timeline()
-    .fromTo('.container-words-1 .words', { 
-        x: 0,
-    },{
-        x: ( containerWidth1 - windowWidth ) * -1,
-    },0)
-    .fromTo('.container-words-2 .words', { 
-        x: 0,
-    },{
-        x: containerWidth2 - windowWidth,
-    },0)
-    .fromTo('.container-logos .logos', { 
-        x: 0
-    },{
-        x: ( containerWidth3 - windowWidth ) * -1,
-    },0)
-    
+        .fromTo('.container-words-1 .words', {
+            x: 0,
+        }, {
+            x: (containerWidth1 - windowWidth) * -1,
+        }, 0)
+        .fromTo('.container-words-2 .words', {
+            x: 0,
+        }, {
+            x: containerWidth2 - windowWidth,
+        }, 0)
+        .fromTo('.container-logos .logos', {
+            x: 0
+        }, {
+            x: (containerWidth3 - windowWidth) * -1,
+        }, 0)
+
     ScrollTrigger.create({
         animation: sectionsTimeline,
         trigger: containerScrollTrigger,
         start: '50% 50%',
-        markers: true,
+        markers: false,
         end: 5000,
         scrub: true,
         pin: true
@@ -94,7 +94,7 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Enabled tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -102,3 +102,69 @@ $(document).ready(function() {
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 });
+
+
+
+
+// Fill color tickers and animate
+
+// $(".profile").each(function (index, element) {
+//     gsap.set($(element), {
+//         opacity: 0,
+//         y: 60,
+//     });
+//     ScrollTrigger.batch($(element), {
+//         start: 'top 100%',
+//         onEnter: batch => {
+//             console.log("onEnter");
+//             gsap.to(batch, {
+//                 opacity: 1,
+//                 y: 0,
+//                 stagger: 1
+//             });
+//         }
+//     });
+// });
+$(document).ready(function () {
+    
+    gsap.set('.profile', {
+        opacity: 0,
+        y: 60,
+    })
+    ScrollTrigger.batch('.profile', {
+        start: 'top 100%',
+        onEnter: batch => {
+            console.log("onEnter");
+            gsap.to(batch, {
+                opacity: 1,
+                y: 0,
+                stagger: 0.5
+            });
+        }
+    })
+});
+
+
+
+
+
+
+
+// Fade items animation GSAP
+// once('fadeInItems', '.fade_items .section-container .field--name-field-rel > .field__item', context).forEach(function (e) {
+//     gsap.set($(e), {
+//         opacity: 0,
+//         y: 60,
+//     })
+//     ScrollTrigger.batch($(e), {
+//         start: 'top 80%',
+//         onEnter: batch => {
+//             console.log("onEnter");
+//             gsap.to(batch, {
+//                 opacity: 1,
+//                 y: 0,
+//                 stagger: 1
+//             });
+//         }
+//     })
+// })
