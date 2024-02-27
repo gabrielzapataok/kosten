@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "poppins", sans-serif;
 }
@@ -86,6 +87,12 @@
      object-fit: cover;
 }
 
+.section-intro {
+  display: flex;
+}
+.section-intro video {
+  max-width: 40%;
+}
 .section-intro p {
   margin-right: 3rem;
   font-size: 1.75rem;
@@ -134,6 +141,12 @@
   font-size: 1rem;
   font-weight: 400;
 }
+.slick-services-home .swiper .card-style img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .slick-services-home .swiper .swiper-slide {
   transition: 0.5s;
   background: #fefefe;
@@ -171,18 +184,19 @@
   width: -moz-max-content;
   width: max-content;
   display: flex;
-  gap: 2rem;
   flex-wrap: nowrap;
   margin-bottom: 1rem;
 }
 .section-clients .logos .logo {
+  padding: 0 60px;
   width: auto;
-  height: 100px;
+  height: 70px;
 }
 .section-clients .words {
   width: -moz-max-content;
   width: max-content;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: nowrap;
 }
 .section-clients .words .word {
@@ -194,9 +208,48 @@
   font-weight: 200;
   font-size: 2.5rem;
 }
+.section-clients .words .word h1:before {
+  position: relative;
+}
+.section-clients .words .word h1:before {
+  content: "●";
+  position: relative;
+  font-size: 1rem;
+  top: -0.1rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
 
 .section-about-us {
-  background-image: url(./assets/bg-about-us.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+}
+.section-about-us .container {
+  position: relative;
+  z-index: 1;
+}
+.section-about-us video {
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.section-our-team .profile {
+  margin: 10px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+.section-our-team .profile img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(1);
 }/*# sourceMappingURL=index.css.map */

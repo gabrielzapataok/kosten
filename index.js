@@ -47,43 +47,46 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     }
 });
 
-// Slider services
-// const sectionClientsWords = new Swiper('.section-clients .swiper', {
-//     loop: true,
-//     autoplay: {
-//         delay: 0, // El tiempo de espera entre slides en milisegundos
-//         disableOnInteraction: false, // Para que el autoplay no se detenga al interactuar con el carousel
-//     },
-//     speed: 10000,
-//     effect: 'linear',
-//     virtual: {
-//         enabled: true,
-//     },
+
+
+// Gsap clients
+
+
+$(document).ready(function() {
+    // Calcular el ancho de '.container-words-1 .words'
+    var containerWidth1 = $('.container-words-1 .words').width();
+    var containerWidth2 = $('.container-words-2 .words').width();
+    var containerWidth3 = $('.container-logos .logos').width();
+    console.log(containerWidth3);
     
-// });
+    var windowWidth = $(window).width();
 
-
-
-// Gsap
-gsap.registerPlugin(ScrollTrigger);
-const containerScrollTrigger = document.querySelector(".section-clients")
-const sectionsTimeline = gsap.timeline()
-.from('.container-words-1 .words', { 
-    xPercent: -100,
-},0)
-.from('.container-words-2 .words', { 
-    xPercent: 100,
-},0)
-.to('.container-logos .logos', { 
-    x: "-200px"
-},0)
-
-ScrollTrigger.create({
-    animation: sectionsTimeline,
-    trigger: containerScrollTrigger,
-    start: '50% 50%',
-    markers: true,
-    end: 8000,
-    scrub: true,
-    pin: true
-})
+    gsap.registerPlugin(ScrollTrigger);
+    const containerScrollTrigger = document.querySelector(".section-clients")
+    const sectionsTimeline = gsap.timeline()
+    .fromTo('.container-words-1 .words', { 
+        x: 0,
+    },{
+        x: ( containerWidth1 - windowWidth ) * -1,
+    },0)
+    .fromTo('.container-words-2 .words', { 
+        x: 0,
+    },{
+        x: containerWidth2 - windowWidth,
+    },0)
+    .fromTo('.container-logos .logos', { 
+        x: 0
+    },{
+        x: ( containerWidth3 - windowWidth ) * -1,
+    },0)
+    
+    ScrollTrigger.create({
+        animation: sectionsTimeline,
+        trigger: containerScrollTrigger,
+        start: '50% 50%',
+        markers: true,
+        end: 8000,
+        scrub: true,
+        pin: true
+    })
+});
