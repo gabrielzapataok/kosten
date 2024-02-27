@@ -15,20 +15,26 @@ const swiperServices = new Swiper('.slick-services-home .swiper', {
     },
 });
 
+
 // Slider videos
 const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,
-    autoplay: true,
+    autoplay: {
+        delay: 6000, // Intervalo de tiempo en milisegundos
+    },
     on: {
         init: function () {
-            const videos = document.querySelectorAll('video')
+            const videos = document.querySelectorAll('.header-slider-videos video')
             const activeIndex = this.realIndex
             const activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex]
             const activeVideo = activeSlide.getElementsByTagName('video')[0]
             activeVideo.muted = true
             Array.prototype.forEach.call(videos, function (video) {
-                video.pause
                 video.currentType = 0
+                video.addEventListener('ended', function () {
+                    this.currentTime = 0;
+                    this.play();
+                });
             })
             activeVideo.play()
         },
@@ -39,7 +45,7 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
             const activeVideo = activeSlide.getElementsByTagName('video')[0]
             activeVideo.muted = true
             Array.prototype.forEach.call(videos, function (video) {
-                video.pause
+                // video.pause()
                 video.currentType = 0
             })
             activeVideo.play()
@@ -48,16 +54,12 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
 });
 
 
-
 // Gsap clients
-
-
 $(document).ready(function() {
     // Calcular el ancho de '.container-words-1 .words'
     var containerWidth1 = $('.container-words-1 .words').width();
     var containerWidth2 = $('.container-words-2 .words').width();
     var containerWidth3 = $('.container-logos .logos').width();
-    console.log(containerWidth3);
     
     var windowWidth = $(window).width();
 

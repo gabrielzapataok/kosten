@@ -116,6 +116,28 @@
   max-width: 100%;
   height: 352px;
 }
+.slick-services-home .swiper .swiper-scrollbar {
+  display: none;
+}
+.slick-services-home .swiper .swiper-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-services-home .swiper .swiper-button:after {
+  content: unset;
+}
+.slick-services-home .swiper .swiper-button-prev:after {
+  content: unset;
+}
+.slick-services-home .swiper .swiper-button-next:after {
+  content: unset;
+}
 .slick-services-home .swiper .card-style {
   width: 100%;
   height: 100%;
