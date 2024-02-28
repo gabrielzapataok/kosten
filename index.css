@@ -53,7 +53,7 @@
   left: 0;
 }
 .main-nav-container img {
-  height: 40px;
+  height: 45px;
 }
 .main-nav-container .menu {
   font-size: 1.5rem;
@@ -219,8 +219,8 @@
   font-weight: 400;
 }
 .slick-services-home .swiper .card-style img {
-  width: 114px;
-  height: 114px;
+  width: 90px;
+  height: 90px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 1.3rem;
