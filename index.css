@@ -266,7 +266,7 @@
 }
 .section-about-us .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .section-about-us video {
   top: 0;
@@ -280,7 +280,7 @@
   height: 100%;
   z-index: 0;
 }
-.section-about-us video::after {
+.section-about-us .overlay {
   content: "";
   top: 0;
   position: absolute;
@@ -291,7 +291,7 @@
      object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.4196078431);
 }
 
