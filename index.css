@@ -114,22 +114,35 @@
      object-fit: cover;
 }
 
-.section-intro {
-  display: flex;
-}
 .section-intro video {
-  max-width: 40%;
+  flex: 0 1 50%;
+  width: 400px;
+  max-width: 100%;
 }
 .section-intro p {
-  margin-right: 3rem;
+  max-width: 100%;
+  flex: 1 0 700px;
   font-size: 1.75rem;
   font-weight: 100;
 }
 
 .slick-services-home {
+  position: relative;
   background-image: url(./assets/bg-services.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.slick-services-home:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(white, transparent);
+}
+.slick-services-home .container {
+  position: relative;
 }
 .slick-services-home #btn-read-more {
   font-size: 1.06rem;
@@ -338,7 +351,7 @@
   margin: 0.5rem 5rem;
 }
 .section-our-team .profile .fa-brands {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .section-careers {
@@ -352,6 +365,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   flex: 1 0 400px;
+  max-width: 100%;
 }
 .section-careers .content-careers {
   flex: 1 0 400px;

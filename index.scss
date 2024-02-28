@@ -108,21 +108,37 @@
 }
 
 .section-intro {
-    display: flex;
     video {
-        max-width: 40%;
+        flex: 0 1 50%;
+        width: 400px;
+        max-width: 100%;
     }
     p {
-        margin-right: 3rem;
+        max-width: 100%;
+        flex: 1 0 700px;
         font-size: 1.75rem;
         font-weight: 100;
     }
 }
 
+
 .slick-services-home {
+    position: relative;
     background-image: url(./assets/bg-services.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(white, transparent);
+    }
+    .container {
+        position: relative;
+    }
     #btn-read-more {
         font-size: 1.06rem;
     }
@@ -336,7 +352,7 @@
             margin: 0.5rem 5rem;
         }
         .fa-brands {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 }
@@ -350,6 +366,7 @@
     video {
         object-fit: cover;
         flex: 1 0 400px;
+        max-width: 100%;
     }
     .content-careers {
         flex: 1 0 400px;

@@ -86,7 +86,7 @@ $(document).ready(function () {
         animation: sectionsTimeline,
         trigger: containerScrollTrigger,
         start: '100px 100%',
-        markers: true,
+        markers: false,
         end: '200px 0%',
         scrub: true,
         pin: false,
