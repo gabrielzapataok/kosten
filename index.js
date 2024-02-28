@@ -85,11 +85,12 @@ $(document).ready(function () {
     ScrollTrigger.create({
         animation: sectionsTimeline,
         trigger: containerScrollTrigger,
-        start: '0% 100%',
-        markers: false,
-        end: 0,
+        start: '100px 100%',
+        markers: true,
+        end: '200px 0%',
         scrub: true,
-        pin: false
+        pin: false,
+        ease: "none",
     })
 });
 

@@ -23,6 +23,10 @@
 .bg-grey-light {
     background-color: #f5f5f5;
 }
+.btn.btn-transparent {
+    background-color: #ffffff3d !important;
+    --bs-btn-hover-bg: #ffffff60;
+}
 
 .main-nav-container {
     position: relative;
@@ -231,11 +235,11 @@
         width: max-content;
         display: flex;
         flex-wrap: nowrap;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
         .logo {
             padding: 0 60px;
             width: auto;
-            height: 70px;
+            height: 55px;
         }
     }
     .words {
@@ -337,7 +341,28 @@
     }
 }
 
+.section-careers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #0b1119;
+    color: white;
+    video {
+        object-fit: cover;
+        flex: 1 0 400px;
+    }
+    .content-careers {
+        flex: 1 0 400px;
+        h2 {
+            font-weight: 200;
+        }
+    }
+}
+
 .section-footer {
+    a {
+        color: #9dc4ff;
+    }
     color: #ffffff;
     .slogan, .subscribe {
         width: 500px;
