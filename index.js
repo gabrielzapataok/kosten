@@ -134,7 +134,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function(){
-    $(".advisory-board").hide();
+    $(".executive-team").hide();
     $("#executive-team").click(function(){
         $("#executive-team").addClass("selected");
         $("#advisory-board").removeClass("selected");

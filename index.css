@@ -67,6 +67,11 @@ html, body {
   font-size: 1.5rem;
   font-weight: 100;
 }
+@media (max-width: 1000px) {
+  .main-nav-container .menu {
+    font-size: 1rem;
+  }
+}
 .main-nav-container .menu ul {
   padding: 0;
   list-style: none;

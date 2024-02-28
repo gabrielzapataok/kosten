@@ -63,6 +63,9 @@ html, body {
         }
     .menu {
         font-size: 1.5rem;
+        @include max(1000px) {
+            font-size: 1rem;
+        }
         font-weight: 100;
         ul {
             padding: 0;
