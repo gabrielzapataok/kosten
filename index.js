@@ -85,11 +85,11 @@ $(document).ready(function () {
     ScrollTrigger.create({
         animation: sectionsTimeline,
         trigger: containerScrollTrigger,
-        start: '50% 50%',
+        start: '0% 100%',
         markers: false,
-        end: 5000,
+        end: 0,
         scrub: true,
-        pin: true
+        pin: false
     })
 });
 
@@ -105,26 +105,6 @@ $(document).ready(function () {
 
 
 
-
-// Fill color tickers and animate
-
-// $(".profile").each(function (index, element) {
-//     gsap.set($(element), {
-//         opacity: 0,
-//         y: 60,
-//     });
-//     ScrollTrigger.batch($(element), {
-//         start: 'top 100%',
-//         onEnter: batch => {
-//             console.log("onEnter");
-//             gsap.to(batch, {
-//                 opacity: 1,
-//                 y: 0,
-//                 stagger: 1
-//             });
-//         }
-//     });
-// });
 $(document).ready(function () {
     
     gsap.set('.profile', {
@@ -143,28 +123,3 @@ $(document).ready(function () {
         }
     })
 });
-
-
-
-
-
-
-
-// Fade items animation GSAP
-// once('fadeInItems', '.fade_items .section-container .field--name-field-rel > .field__item', context).forEach(function (e) {
-//     gsap.set($(e), {
-//         opacity: 0,
-//         y: 60,
-//     })
-//     ScrollTrigger.batch($(e), {
-//         start: 'top 80%',
-//         onEnter: batch => {
-//             console.log("onEnter");
-//             gsap.to(batch, {
-//                 opacity: 1,
-//                 y: 0,
-//                 stagger: 1
-//             });
-//         }
-//     })
-// })
