@@ -1,3 +1,9 @@
+
+@mixin max($size){
+    @media (max-width: #{$size}){
+        @content
+    }
+}
 * {
     font-family: 'poppins', sans-serif;
 }
@@ -97,6 +103,15 @@
                 font-weight: 200;
                 max-width: 1000px;
                 padding: 1.5rem 3rem;
+                @include max(1000px) {
+                    font-size: 3rem;
+                }
+                @include max(720px) {
+                    font-size: 2.9rem;
+                }
+                @include max(500px) {
+                    font-size: 2.3rem;
+                }
             }
         } 
         video {

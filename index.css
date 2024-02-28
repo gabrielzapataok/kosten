@@ -107,6 +107,21 @@
   max-width: 1000px;
   padding: 1.5rem 3rem;
 }
+@media (max-width: 1000px) {
+  .header-slider-videos .slide-video .title-container h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 720px) {
+  .header-slider-videos .slide-video .title-container h1 {
+    font-size: 2.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .header-slider-videos .slide-video .title-container h1 {
+    font-size: 2.3rem;
+  }
+}
 .header-slider-videos .slide-video video {
   width: 100%;
   height: 100%;
