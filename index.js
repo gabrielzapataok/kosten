@@ -2,7 +2,9 @@
 const swiperServices = new Swiper('.slick-services-home .swiper', {
     loop: true,
     effect: 'coverflow',
-    autoplay: true,
+    autoplay: {
+        delay: 4500, // Intervalo de tiempo en milisegundos
+    },
     slidesPerView: 2,
     centeredSlides: true,
     coverflowEffect: {
@@ -123,4 +125,29 @@ $(document).ready(function () {
             });
         }
     })
+});
+
+
+
+
+
+
+
+$(document).ready(function(){
+    $(".advisory-board").hide();
+    $("#executive-team").click(function(){
+        $("#executive-team").addClass("selected");
+        $("#advisory-board").removeClass("selected");
+        $(".executive-team").fadeOut(function(){
+            $(".advisory-board").fadeIn()
+        });
+    });
+    $("#advisory-board").click(function(){
+        $("#executive-team").removeClass("selected"); // Cambiado de addClass a removeClass
+        $("#advisory-board").addClass("selected"); // Cambiado de removeClass a addClass
+        $(".advisory-board").fadeOut(function(){
+                $(".executive-team").fadeIn();
+            }
+        );
+    });
 });

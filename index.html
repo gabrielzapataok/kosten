@@ -44,11 +44,11 @@
                 <img src="./assets/logos/koten logo blanco.svg" alt="">
                 <div class="menu">
                     <ul>
-                        <li>About us</li>
-                        <li>Solutions</li>
-                        <li>Resources</li>
-                        <li>Careers</li>
-                        <li>Contact</li>
+                        <li><a href="#section-about-us" class="text-white">About us</a></li>
+                        <li><a href="#slick-services-home" class="text-white">Solutions</a></li>
+                        <li><a href="#section-resources" class="text-white">Resources</a></li>
+                        <li><a href="#section-careers" class="text-white">Careers</a></li>
+                        <li><a href="#section-footer" class="text-white">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,12 +56,12 @@
     </div>
 
     <!-- header section -->
-    <section class="header-slider-videos">
+    <section class="header-slider-videos" id="header-slider-videos">
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-video">
-                        <video src="./assets/carrousel/istockphoto-1188579902-640_adpp_is.mp4" type="video/mp4"></video>
+                        <video src="./assets/carrousel/car-1.mp4" type="video/mp4"></video>
                         <div class="title-container">
                             <h1>Transforming Life Sciences through Digital Solutions</h1>
                         </div>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-video">
-                        <video src="./assets/carrousel/istockphoto-1498340443-640_adpp_is.mp4" type="video/mp4"></video>
+                        <video src="./assets/carrousel/car-2.mp4" type="video/mp4"></video>
                         <div class="title-container">
                             <h1>Better global processes with continuous data integration</h1>
                         </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-video">
-                        <video src="./assets/carrousel/istockphoto-2005055857-640_adpp_is.mp4" type="video/mp4"></video>
+                        <video src="./assets/carrousel/car-3.mp4" type="video/mp4"></video>
                         <div class="title-container">
                             <h1>IT to advance new therapies and compassionate care</h1>
                         </div>
@@ -88,7 +88,7 @@
     </section>
 
     <!-- intro section -->
-    <section class="section-intro d-flex align-items-center justify-content-center flex-wrap-reverse mr-5">
+    <section class="section-intro d-flex align-items-center justify-content-center flex-wrap-reverse mr-5" id="section-intro">
         <video src="./assets/backgrounds/tablet.mp4" type="video/mp4" muted loop autoplay></video>
         <p class="p-5">Kosten Digital creates personalized technology solutions to help life sciences organizations innovate,
             achieve operational excellence and exploit their data through AI. <br> We meet our customers wherever they
@@ -96,7 +96,7 @@
     </section>
 
     <!-- Services section -->
-    <section class="slick-services-home pt-5">
+    <section class="slick-services-home pt-5" id="slick-services-home">
         <div class="container">
             <h1 class="text-center title-section">Kosten solutions</h1>
             <p class="text-center">Each solution is built to your needs, and so is the team that delivers them. We have
@@ -192,7 +192,7 @@
     </section>
 
     <!-- section clients -->
-    <section class="section-clients bg-grey-light py-5">
+    <section class="section-clients bg-grey-light py-5" id="section-clients">
         <h2 class="subtitle-section text-center mb-4">Clients:</h2>
         <div class="container-logos">
             <div class="logos">
@@ -201,8 +201,8 @@
                 <img class="logo" src="./assets/customers/hug-logo.png.webp" alt="">
                 <img class="logo" src="./assets/customers/paho-logo.png.webp" alt="">
                 <img class="logo" src="./assets/customers/oms-logo.png.webp" alt="">
-                <img class="logo" src="./assets/customers/osde-logo.png.webp" alt="">
-                <img class="logo" src="./assets/customers/materCell-logo.png.webp" alt="">
+                <img class="logo" src="./assets/customers/Roemmers-logo.png" alt="">
+                <img class="logo" src="./assets/customers/siegfried-logo.png" alt="">
             </div>
         </div>
         <hr class="my-5">
@@ -232,7 +232,7 @@
     </section>
 
     <!-- Section about us -->
-    <section class="section-about-us text-center text-white py-5">
+    <section class="section-about-us text-center text-white py-5" id="section-about-us">
         <video src="./assets/backgrounds/bg-about-us.mp4" type="video/mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <div class="container">
@@ -248,19 +248,15 @@
     </section>
 
     <!-- Section our team -->
-    <section class="section-our-team py-5">
+    <section class="section-our-team py-5" id="section-our-team">
         <h1 class="text-center title-section">Our team</h1>
         <div class="container-tabs my-5">
-            <div class="tab text-end">
-                <button class="btn px-0 text-uppercase">Executive team</button>
-            </div>
-            <div class="tab">
-                <button class="btn px-0 text-uppercase">Advisory board</button>
-            </div>
+            <div class="tab text-end px-0 text-uppercase selected" id="executive-team">Executive team</div>
+            <div class="tab px-0 text-uppercase" id="advisory-board">Advisory board</div>
         </div>
         <div class="our-team-container">
-            <div class="row container mx-auto profiles">
-                <div class="col-xl-3 col-md-6 col-12">
+            <div class="row container mx-auto profiles advisory-board">
+                <div class="col-xl-4 col-md-4 col-12">
                     <div class="profile">
                         <img src="./assets/profiles/daniel.png" alt="">
                         <div class="name">Daniel Merkier</div>
@@ -269,7 +265,7 @@
                         <i class="fa-brands fa-linkedin-in mb-3"></i>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12">
+                <div class="col-xl-4 col-md-4 col-12">
                     <div class="profile">
                         <img src="./assets/profiles/gustavo.png" alt="">
                         <div class="name">Gustavo BreitBart</div>
@@ -278,7 +274,7 @@
                         <i class="fa-brands fa-linkedin-in mb-3"></i>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12">
+                <div class="col-xl-4 col-md-4 col-12">
                     <div class="profile">
                         <img src="./assets/profiles/mariano.png" alt="">
                         <div class="name">Mariano Tribuj</div>
@@ -287,7 +283,18 @@
                         <i class="fa-brands fa-linkedin-in mb-3"></i>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col-12">
+            </div>
+            <div class="row container mx-auto profiles executive-team">
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="profile">
+                        <img src="./assets/profiles/profile-3.webp" alt="">
+                        <div class="name">Edy Resnik</div>
+                        <div class="rol">CEO</div>
+                        <hr class="my-3">
+                        <i class="fa-brands fa-linkedin-in mb-3"></i>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-12">
                     <div class="profile">
                         <img src="./assets/profiles/clau.png" alt="">
                         <div class="name">Claudia Zylberberg</div>
@@ -301,7 +308,7 @@
     </section>
 
     <!-- Section careers -->
-    <section class="section-careers">
+    <section class="section-careers" id="section-careers">
         <video src="./assets/backgrounds/bg-careers.mp4" type="video/mp4" muted loop autoplay></video>
         <div class="content-careers p-5">
             <h1 class="title-section">careers</h1>
@@ -312,7 +319,7 @@
     </section>
 
     <!-- Section footer -->
-    <footer class="section-footer bg-dark py-5 px-5">
+    <footer class="section-footer bg-dark py-5 px-5" id="section-footer">
         <div class="d-block mb-5">
             <img src="assets/logos/koten logo blanco.svg" alt="" srcset="">
         </div>

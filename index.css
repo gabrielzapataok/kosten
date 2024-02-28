@@ -1,4 +1,12 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  transition: scroll-behavior 0.5s ease;
+}
+
 * {
   font-family: "poppins", sans-serif;
 }
@@ -83,6 +91,9 @@
 }
 .main-nav-container .menu ul li:hover:before {
   width: 100%;
+}
+.main-nav-container .menu ul li a {
+  text-decoration: none;
 }
 
 .header-slider-videos .swiper {
@@ -338,6 +349,11 @@
 .section-our-team .container-tabs .tab {
   flex: 1 1 50%;
   border-bottom: 3px solid black;
+  cursor: pointer;
+}
+.section-our-team .container-tabs .tab:not(.selected) {
+  color: #a5a5a5;
+  border-color: #a5a5a5;
 }
 .section-our-team .profile {
   margin: 10px;
