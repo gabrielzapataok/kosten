@@ -501,10 +501,11 @@ body {
 }
 .section-our-team .profile {
   max-width: 280px;
-  margin: 10px;
+  margin: 0 10px;
   background-color: #000000;
   color: white;
   text-align: center;
+  height: 100%;
 }
 .section-our-team .profile .name {
   margin-top: 0.5rem;

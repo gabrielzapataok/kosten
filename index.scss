@@ -558,11 +558,11 @@ body {
 
     .profile {
         max-width: 280px;
-        margin: 10px;
+        margin: 0 10px;
         background-color: #000000;
         color: white;
         text-align: center;
-
+        height: 100%;
         .name {
             margin-top: .5rem;
             font-weight: 600;
