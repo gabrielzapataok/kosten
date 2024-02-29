@@ -445,6 +445,65 @@ body {
     }
 }
 
+
+.section-customers{
+    .container-clients{
+        width: 100%;
+        overflow: hidden;
+        .client{
+            padding: 0 60px;
+            width: auto;
+            height: 55px;
+        }
+    }
+    .container-words-1,
+    .container-words-2,
+    .clients {
+        width: max-content;
+        display: flex;
+        flex-wrap: nowrap;
+        animation-name: carousell;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .container-words-1 {
+        animation-direction: reverse;
+        animation-duration: 34s;
+    }
+    .container-words-2 {
+        animation-duration: 30s;
+    }
+    .words {
+        width: max-content;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        .word {
+            margin-left: 1rem;
+            h1 {
+                white-space: nowrap;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 2.5rem;
+                &:before {
+                    content: "●";
+                    position: relative;
+                    font-size: 1rem;
+                    top: -.1rem;
+                    vertical-align: middle;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes carousell {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 .section-about-us {
     position: relative;
 

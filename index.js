@@ -58,44 +58,44 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
 
 
 // Gsap clients
-$(document).ready(function () {
-    // Calcular el ancho de '.container-words-1 .words'
-    var containerWidth1 = $('.container-words-1 .words').width();
-    var containerWidth2 = $('.container-words-2 .words').width();
-    var containerWidth3 = $('.container-logos .logos').width();
+// $(document).ready(function () {
+//     // Calcular el ancho de '.container-words-1 .words'
+//     var containerWidth1 = $('.container-words-1 .words').width();
+//     var containerWidth2 = $('.container-words-2 .words').width();
+//     var containerWidth3 = $('.container-logos .logos').width();
 
-    var windowWidth = $(window).width();
+//     var windowWidth = $(window).width();
 
-    gsap.registerPlugin(ScrollTrigger);
-    const containerScrollTrigger = document.querySelector(".section-clients")
-    const sectionsTimeline = gsap.timeline()
-        .fromTo('.container-words-1 .words', {
-            x: 0,
-        }, {
-            x: (containerWidth1 - windowWidth) * -1,
-        }, 0)
-        .fromTo('.container-words-2 .words', {
-            x: 0,
-        }, {
-            x: containerWidth2 - windowWidth,
-        }, 0)
-        .fromTo('.container-logos .logos', {
-            x: 0
-        }, {
-            x: (containerWidth3 - windowWidth) * -1,
-        }, 0)
+//     gsap.registerPlugin(ScrollTrigger);
+//     const containerScrollTrigger = document.querySelector(".section-clients")
+//     const sectionsTimeline = gsap.timeline()
+//         .fromTo('.container-words-1 .words', {
+//             x: 0,
+//         }, {
+//             x: (containerWidth1 - windowWidth) * -1,
+//         }, 0)
+//         .fromTo('.container-words-2 .words', {
+//             x: 0,
+//         }, {
+//             x: containerWidth2 - windowWidth,
+//         }, 0)
+//         .fromTo('.container-logos .logos', {
+//             x: 0
+//         }, {
+//             x: (containerWidth3 - windowWidth) * -1,
+//         }, 0)
 
-    ScrollTrigger.create({
-        animation: sectionsTimeline,
-        trigger: containerScrollTrigger,
-        start: '100px 100%',
-        markers: false,
-        end: '200px 0%',
-        scrub: true,
-        pin: false,
-        ease: "none",
-    })
-});
+//     ScrollTrigger.create({
+//         animation: sectionsTimeline,
+//         trigger: containerScrollTrigger,
+//         start: '100px 100%',
+//         markers: false,
+//         end: '200px 0%',
+//         scrub: true,
+//         pin: false,
+//         ease: "none",
+//     })
+// });
 
 
 $(document).ready(function () {

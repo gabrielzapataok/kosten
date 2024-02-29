@@ -391,6 +391,67 @@ body {
   margin-right: 1rem;
 }
 
+.section-customers .container-clients {
+  width: 100%;
+  overflow: hidden;
+}
+.section-customers .container-clients .client {
+  padding: 0 60px;
+  width: auto;
+  height: 55px;
+}
+.section-customers .container-words-1,
+.section-customers .container-words-2,
+.section-customers .clients {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+  animation-name: carousell;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.section-customers .container-words-1 {
+  animation-direction: reverse;
+  animation-duration: 34s;
+}
+.section-customers .container-words-2 {
+  animation-duration: 30s;
+}
+.section-customers .words {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.section-customers .words .word {
+  margin-left: 1rem;
+}
+.section-customers .words .word h1 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+.section-customers .words .word h1:before {
+  content: "●";
+  position: relative;
+  font-size: 1rem;
+  top: -0.1rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+@keyframes carousell {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .section-about-us {
   position: relative;
 }
