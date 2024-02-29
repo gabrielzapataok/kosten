@@ -470,3 +470,42 @@ html, body {
         }
     }
 }
+
+.basic-content-header {
+    position: relative;
+    overflow: hidden;
+    .title {
+        min-height: 400px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.2;
+        padding: 2rem 1rem;
+        @media (max-width: 720px) {
+            font-size: 2rem;
+        }
+    }
+    .main-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:  100%;
+        height: 100%;
+        img{
+            object-fit: cover;
+            width: 100%;
+            filter: brightness(.68);
+        }
+    }
+}
+
+
+.section-accordion .accordion-button {
+    font-size: 1.5rem;
+}

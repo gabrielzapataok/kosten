@@ -151,3 +151,25 @@ $(document).ready(function(){
         );
     });
 });
+
+
+
+// Parallax animation
+$(document).ready(function(){
+    const img = $('.basic-content-header .main-image img')
+    img.css("height", "140%")
+    
+    const parallaxTimeLine = gsap.timeline()
+    parallaxTimeLine.from(img, {
+        duration: 1,
+        ease: "none",
+        yPercent: "-=40",
+    });
+    ScrollTrigger.create({
+        animation: parallaxTimeLine,
+        trigger: img,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+    })
+})

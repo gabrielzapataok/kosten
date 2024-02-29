@@ -480,4 +480,45 @@ html, body {
 .section-footer .map #marker-3 {
   top: 24px;
   left: 157px;
+}
+
+.basic-content-header {
+  position: relative;
+  overflow: hidden;
+}
+.basic-content-header .title {
+  min-height: 400px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  padding: 2rem 1rem;
+}
+@media (max-width: 720px) {
+  .basic-content-header .title {
+    font-size: 2rem;
+  }
+}
+.basic-content-header .main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.basic-content-header .main-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  filter: brightness(0.68);
+}
+
+.section-accordion .accordion-button {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=index.css.map */
