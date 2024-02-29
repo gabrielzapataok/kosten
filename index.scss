@@ -636,7 +636,8 @@ body {
 
         img {
             width: 297px;
-            height: 143px;
+            height: auto;
+            max-width: 100%;
         }
 
         .fa-map-marker-alt {
@@ -654,18 +655,18 @@ body {
         }
 
         #marker-1 {
-            top: 57px;
-            left: 68px;
+            top: 39%;
+            left: 24%;
         }
 
         #marker-2 {
-            top: 109px;
-            left: 83px;
+            top: 76%;
+            left: 27%;
         }
 
         #marker-3 {
-            top: 42px;
-            left: 130px;
+            top: 27%;
+            left: 43%;
         }
     }
 }

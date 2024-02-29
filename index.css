@@ -570,7 +570,8 @@ body {
 }
 .section-footer .map img {
   width: 297px;
-  height: 143px;
+  height: auto;
+  max-width: 100%;
 }
 .section-footer .map .fa-map-marker-alt {
   cursor: pointer;
@@ -585,16 +586,16 @@ body {
   font-size: 1.2rem;
 }
 .section-footer .map #marker-1 {
-  top: 57px;
-  left: 68px;
+  top: 39%;
+  left: 24%;
 }
 .section-footer .map #marker-2 {
-  top: 109px;
-  left: 83px;
+  top: 76%;
+  left: 27%;
 }
 .section-footer .map #marker-3 {
-  top: 42px;
-  left: 130px;
+  top: 27%;
+  left: 43%;
 }
 
 .basic-content-header {
