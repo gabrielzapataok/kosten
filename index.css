@@ -188,14 +188,17 @@ html, body {
      object-fit: cover;
 }
 
-.section-intro video {
-  flex: 0 1 50%;
-  width: 400px;
+.section-intro .video-intro {
+  flex: 0 1 auto;
+}
+.section-intro .video-intro video {
   max-width: 100%;
+  width: 300px;
 }
 .section-intro p {
   max-width: 100%;
-  flex: 1 0 700px;
+  padding-right: 0 !important;
+  flex: 1 0 50%;
   font-size: 1.75rem;
   font-weight: 100;
 }
