@@ -63,6 +63,16 @@ html, body {
 .main-nav-container img {
   height: 45px;
 }
+@media (max-width: 1000px) {
+  .main-nav-container img {
+    height: 38px;
+  }
+}
+@media (max-width: 680) {
+  .main-nav-container img {
+    height: 32px;
+  }
+}
 .main-nav-container .menu {
   font-size: 1.5rem;
   font-weight: 100;
@@ -103,6 +113,7 @@ html, body {
 
 .header-slider-videos .swiper {
   height: 100vh;
+  height: 100dvh;
 }
 .header-slider-videos .slide-video {
   position: relative;
@@ -182,6 +193,9 @@ html, body {
   font-size: 1.06rem;
   font-weight: 400;
 }
+.slick-services-home .swiper-slide {
+  height: calc(100% - 0.5rem);
+}
 .slick-services-home .swiper {
   width: 850px;
   max-width: 100%;
@@ -230,9 +244,21 @@ html, body {
   font-weight: 500;
   text-transform: uppercase;
 }
+@media (max-width: 600px) {
+  .slick-services-home .swiper .card-style .title-card {
+    font-size: 0.9rem;
+    line-height: 100%;
+  }
+}
 .slick-services-home .swiper .card-style p {
   font-size: 1rem;
   font-weight: 400;
+}
+@media (max-width: 600px) {
+  .slick-services-home .swiper .card-style p {
+    line-height: 100%;
+    font-size: 0.8rem;
+  }
 }
 .slick-services-home .swiper .card-style img {
   width: 90px;
