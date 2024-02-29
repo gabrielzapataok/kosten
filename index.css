@@ -3,7 +3,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   transition: scroll-behavior 0.5s ease;
 }
 
@@ -37,6 +38,11 @@ html, body {
 
 .bg-grey-light {
   background-color: #f5f5f5;
+}
+
+.bg-black {
+  background-color: #000000;
+  color: white;
 }
 
 .btn.btn-transparent {
@@ -489,7 +495,8 @@ html, body {
 .section-footer a {
   color: #9dc4ff;
 }
-.section-footer .slogan, .section-footer .subscribe {
+.section-footer .slogan,
+.section-footer .subscribe {
   width: 500px;
   max-width: 100%;
 }
@@ -567,4 +574,11 @@ html, body {
 
 .section-accordion .accordion-button {
   font-size: 1.5rem;
+}
+
+.section-legal p {
+  color: #ccc;
+}
+.section-legal a {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
