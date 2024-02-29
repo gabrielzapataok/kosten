@@ -606,8 +606,8 @@ body {
     }
 
     .content-careers {
-        flex: 1 0 400px;
-
+        flex: 1 1 300px;
+        max-width: 100%;
         h2 {
             font-weight: 200;
         }
@@ -654,8 +654,8 @@ body {
         }
 
         #marker-1 {
-            top: 42px;
-            left: 52px;
+            top: 57px;
+            left: 68px;
         }
 
         #marker-2 {
@@ -664,8 +664,8 @@ body {
         }
 
         #marker-3 {
-            top: 24px;
-            left: 157px;
+            top: 42px;
+            left: 130px;
         }
     }
 }
