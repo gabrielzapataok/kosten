@@ -387,6 +387,8 @@ html, body {
   border-color: #a5a5a5;
 }
 .section-our-team .profile {
+  max-width: 280px;
+  margin: auto;
   margin: 10px;
   background-color: #000000;
   color: white;
