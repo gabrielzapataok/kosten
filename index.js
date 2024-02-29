@@ -109,7 +109,6 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    
     gsap.set('.profile', {
         opacity: 0,
         y: 60,
