@@ -132,21 +132,21 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     $(".executive-team").hide();
-    $("#executive-team").click(function(){
+    $("#executive-team").click(function () {
         $("#executive-team").addClass("selected");
         $("#advisory-board").removeClass("selected");
-        $(".executive-team").fadeOut(function(){
+        $(".executive-team").fadeOut(function () {
             $(".advisory-board").fadeIn()
         });
     });
-    $("#advisory-board").click(function(){
+    $("#advisory-board").click(function () {
         $("#executive-team").removeClass("selected"); // Cambiado de addClass a removeClass
         $("#advisory-board").addClass("selected"); // Cambiado de removeClass a addClass
-        $(".advisory-board").fadeOut(function(){
-                $(".executive-team").fadeIn();
-            }
+        $(".advisory-board").fadeOut(function () {
+            $(".executive-team").fadeIn();
+        }
         );
     });
 });
@@ -154,10 +154,10 @@ $(document).ready(function(){
 
 
 // Parallax animation
-$(document).ready(function(){
+$(document).ready(function () {
     const img = $('.basic-content-header .main-image img')
     img.css("height", "140%")
-    
+
     const parallaxTimeLine = gsap.timeline()
     parallaxTimeLine.from(img, {
         duration: 1,
@@ -172,3 +172,23 @@ $(document).ready(function(){
         scrub: true
     })
 })
+
+
+// Menu
+$(document).ready(function () {
+    const open = $('#open-menu')
+    const close = $('#close-menu')
+    const containerMenu = $('.menu')
+    close.hide()
+    open.show()
+    open.click(function () {
+        open.hide()
+        close.show()
+        containerMenu.addClass("opened")
+    });
+    close.click(function () {
+        close.hide()
+        open.show()
+        containerMenu.removeClass("opened")
+    });
+});

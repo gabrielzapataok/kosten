@@ -44,22 +44,41 @@ html, body {
 }
 
 .main-nav-container {
-    position: relative;
+    position: fixed;
     height: 0;
+    width: 100%;
+    &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 74px;
+    background: linear-gradient(#0000008c,#00000000);
+    
+}
     z-index: 2;
     color: white;
         .nav-container {
-            padding: 1rem 3rem;
             display: flex;
             justify-content: space-between;
             position: absolute;
             top: 0;
-            background: linear-gradient(#0000008c,#00000000);
             width: 100%;
             left: 0;
+            .btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin-top: .8rem;
+                z-index: 1;
+                color: white;
+                i {
+                    font-size: 1.8rem;
+                }
+            }
         }
         img {
             height: 45px;
+            margin-top: .8rem;
             @include max(1000px) {
                 height: 38px;
             }
@@ -69,10 +88,24 @@ html, body {
         }
     .menu {
         font-size: 1.5rem;
+        font-weight: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 300px;
+        transition: .3s;
+        background-color: #000000be;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+    right: 0;
         @include max(1000px) {
             font-size: 1rem;
         }
-        font-weight: 100;
+        &.opened {
+            height: 100vh;
+            height: 100dvh;
+        }
         ul {
             padding: 0;
             list-style: none;

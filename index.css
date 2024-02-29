@@ -45,23 +45,41 @@ html, body {
 }
 
 .main-nav-container {
-  position: relative;
+  position: fixed;
   height: 0;
+  width: 100%;
   z-index: 2;
   color: white;
 }
+.main-nav-container:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 74px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5490196078), rgba(0, 0, 0, 0));
+}
 .main-nav-container .nav-container {
-  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5490196078), rgba(0, 0, 0, 0));
   width: 100%;
   left: 0;
 }
+.main-nav-container .nav-container .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0.8rem;
+  z-index: 1;
+  color: white;
+}
+.main-nav-container .nav-container .btn i {
+  font-size: 1.8rem;
+}
 .main-nav-container img {
   height: 45px;
+  margin-top: 0.8rem;
 }
 @media (max-width: 1000px) {
   .main-nav-container img {
@@ -76,11 +94,25 @@ html, body {
 .main-nav-container .menu {
   font-size: 1.5rem;
   font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 300px;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.7450980392);
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
 }
 @media (max-width: 1000px) {
   .main-nav-container .menu {
     font-size: 1rem;
   }
+}
+.main-nav-container .menu.opened {
+  height: 100vh;
+  height: 100dvh;
 }
 .main-nav-container .menu ul {
   padding: 0;
