@@ -21,8 +21,9 @@ const swiperServices = new Swiper('.slick-services-home .swiper', {
 // Slider videos
 const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,
+    speed: 2000,
     autoplay: {
-        delay: 6000, // Intervalo de tiempo en milisegundos
+        delay: 9000, // Intervalo de tiempo en milisegundos
     },
     on: {
         init: function () {

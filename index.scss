@@ -189,7 +189,11 @@ html, body {
         padding-right: 0 !important;
         flex: 1 0 50%;
         font-size: 1.75rem;
-        font-weight: 100;
+        font-weight: 200;
+        line-height: 1.6;
+        @include max(720px){
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -300,7 +304,12 @@ html, body {
     }
 
     .columns-services {
+        .way {
+            display: flex;
+            flex-direction: column;
+        }
         ul {
+            flex-grow: 1;
             padding: 0;
             list-style: none;
             li {

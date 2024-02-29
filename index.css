@@ -200,7 +200,13 @@ html, body {
   padding-right: 0 !important;
   flex: 1 0 50%;
   font-size: 1.75rem;
-  font-weight: 100;
+  font-weight: 200;
+  line-height: 1.6;
+}
+@media (max-width: 720px) {
+  .section-intro p {
+    font-size: 1.5rem;
+  }
 }
 
 .slick-services-home {
@@ -309,7 +315,12 @@ html, body {
 .slick-services-home .swiper .swiper-slide-active {
   background: #ffffff;
 }
+.slick-services-home .columns-services .way {
+  display: flex;
+  flex-direction: column;
+}
 .slick-services-home .columns-services ul {
+  flex-grow: 1;
   padding: 0;
   list-style: none;
 }
