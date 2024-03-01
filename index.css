@@ -186,6 +186,7 @@ body {
   z-index: 1;
   width: 100%;
   left: 0;
+  min-height: 200px;
 }
 .header-slider-videos .slide-video .title-container h1 {
   color: white;
