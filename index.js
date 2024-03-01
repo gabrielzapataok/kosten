@@ -5,6 +5,10 @@ const swiperServices = new Swiper('.slick-services-home .swiper', {
     autoplay: {
         delay: 4500, // Intervalo de tiempo en milisegundos
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     slidesPerView: 2,
     centeredSlides: true,
     coverflowEffect: {
@@ -22,6 +26,10 @@ const swiperClients = new Swiper('.clients.swiper', {
     loop: true,
     autoplay: {
         delay: 4000, // Intervalo de tiempo en milisegundos
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     slidesPerView: 'auto', // Muestra la cantidad de slides que quepan en el contenedor
     spaceBetween: 100,

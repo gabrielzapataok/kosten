@@ -12,7 +12,34 @@ html,
 body {
     transition: scroll-behavior 0.5s ease;
 }
+.swiper {
 
+    .swiper-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background: #000000;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {
+            content: unset;
+        }
+    }
+    
+    .swiper-button-prev {
+        &:after {
+            content: unset;
+        }
+    }
+    
+    .swiper-button-next {
+        &:after {
+            content: unset;
+        }
+    }
+}
 
 * {
     font-family: 'poppins', sans-serif;
@@ -386,6 +413,7 @@ body {
 }
 
 .section-clients {
+    
     .container-words-1 {
         overflow: hidden;
         display: flex;
@@ -416,6 +444,8 @@ body {
             height: 55px;
         }
     }
+
+    
 
     .words {
         width: max-content;

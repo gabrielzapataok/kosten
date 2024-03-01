@@ -8,6 +8,26 @@ body {
   transition: scroll-behavior 0.5s ease;
 }
 
+.swiper .swiper-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-button:after {
+  content: unset;
+}
+.swiper .swiper-button-prev:after {
+  content: unset;
+}
+.swiper .swiper-button-next:after {
+  content: unset;
+}
+
 * {
   font-family: "poppins", sans-serif;
 }
