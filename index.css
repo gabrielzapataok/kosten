@@ -201,7 +201,7 @@ body {
   max-width: 100%;
   width: 300px;
 }
-.section-intro p {
+.section-intro .intro-paragraph {
   max-width: 100%;
   padding-right: 0 !important;
   flex: 1 0 50%;
@@ -210,7 +210,7 @@ body {
   line-height: 1.6;
 }
 @media (max-width: 720px) {
-  .section-intro p {
+  .section-intro .intro-paragraph {
     font-size: 1.5rem;
   }
 }
