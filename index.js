@@ -51,7 +51,7 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
             var h1Element = currentSlide.querySelector('h1')
             setTimeout(function () {
               $(h1Element).fadeIn()
-            }, 1000)
+            }, 500)
         },
         init: function () {
 
@@ -59,7 +59,7 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
             var h1Element = currentSlide.querySelector('h1')
             setTimeout(function () {
               $(h1Element).fadeIn()
-            }, 750)
+            }, 500)
 
             const videos = document.querySelectorAll('.header-slider-videos video')
             const activeIndex = this.realIndex
