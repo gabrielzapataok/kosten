@@ -40,12 +40,27 @@ const swiperClients = new Swiper('.clients.swiper', {
 // Slider videos
 const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,
-    speed: 2000,
+    speed: 1000,
+    // effect: 'fade',
     autoplay: {
         delay: 6500, // Intervalo de tiempo en milisegundos
     },
     on: {
+        transitionEnd: function () {
+            var currentSlide = this.slides[this.activeIndex]
+            var h1Element = currentSlide.querySelector('h1')
+            setTimeout(function () {
+              $(h1Element).fadeIn()
+            }, 1500)
+        },
         init: function () {
+
+            var currentSlide = this.slides[this.activeIndex]
+            var h1Element = currentSlide.querySelector('h1')
+            setTimeout(function () {
+              $(h1Element).fadeIn()
+            }, 1500)
+
             const videos = document.querySelectorAll('.header-slider-videos video')
             const activeIndex = this.realIndex
             const activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex]
