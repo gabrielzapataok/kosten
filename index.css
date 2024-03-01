@@ -203,15 +203,22 @@ body {
 }
 .section-intro .intro-paragraph {
   max-width: 100%;
-  padding-right: 0 !important;
   flex: 1 0 50%;
   font-size: 1.75rem;
   font-weight: 200;
   line-height: 1.6;
+  padding: 3rem 0 3rem 3rem;
 }
 @media (max-width: 720px) {
   .section-intro .intro-paragraph {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding: 3rem 0 2rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .section-intro .intro-paragraph {
+    font-size: 1.1rem;
+    padding: 3rem 0 1rem 1rem;
   }
 }
 

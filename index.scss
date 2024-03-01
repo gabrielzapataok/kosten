@@ -222,14 +222,18 @@ body {
 
     .intro-paragraph {
         max-width: 100%;
-        padding-right: 0 !important;
         flex: 1 0 50%;
         font-size: 1.75rem;
         font-weight: 200;
         line-height: 1.6;
-
+        padding: 3rem 0 3rem 3rem;
         @include max(720px) {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
+            padding: 3rem 0 2rem 2rem;
+        }
+        @include max(500px) {
+            font-size: 1.1rem;
+            padding: 3rem 0 1rem 1rem;
         }
     }
 }
