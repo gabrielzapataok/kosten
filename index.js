@@ -204,3 +204,27 @@ $(document).ready(function () {
         containerMenu.removeClass("opened")
     });
 });
+
+// Read more
+$(document).ready(function() {
+
+    const readMore = $('.btn-read-more')
+    const readLess = $('.btn-read-less')
+    const extraText = $('.extra-text') 
+
+    readLess.hide()
+    extraText.hide()
+
+    readMore.click(function() {
+        console.log("readMore");
+        extraText.show()
+        readMore.hide()
+        readLess.show()
+    })
+    readLess.click(function() {
+        console.log("readLess");
+        extraText.hide()
+        readMore.show()
+        readLess.hide()
+    })
+})
