@@ -21,7 +21,7 @@ const swiperServices = new Swiper('.slick-services-home .swiper', {
 const swiperClients = new Swiper('.clients.swiper', {
     loop: true,
     autoplay: {
-        delay: 4500, // Intervalo de tiempo en milisegundos
+        delay: 4000, // Intervalo de tiempo en milisegundos
     },
     slidesPerView: 'auto', // Muestra la cantidad de slides que quepan en el contenedor
     spaceBetween: 100,
@@ -34,7 +34,7 @@ const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,
     speed: 2000,
     autoplay: {
-        delay: 9000, // Intervalo de tiempo en milisegundos
+        delay: 6500, // Intervalo de tiempo en milisegundos
     },
     on: {
         init: function () {

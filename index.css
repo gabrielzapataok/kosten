@@ -589,16 +589,16 @@ body {
   font-size: 1.2rem;
 }
 .section-footer .map #marker-1 {
-  top: 39%;
-  left: 24%;
+  top: 35%;
+  left: 22%;
 }
 .section-footer .map #marker-2 {
-  top: 76%;
-  left: 27%;
-}
-.section-footer .map #marker-3 {
   top: 27%;
   left: 43%;
+}
+.section-footer .map #marker-3 {
+  top: 76%;
+  left: 27%;
 }
 
 .basic-content-header {
