@@ -359,7 +359,7 @@ body {
   flex-wrap: nowrap;
 }
 .section-clients .logos .logo {
-  padding: 0 60px;
+  padding: 0 30px;
   width: auto;
   height: 55px;
 }
@@ -401,8 +401,7 @@ body {
   height: 55px;
 }
 .section-customers .container-words-1,
-.section-customers .container-words-2,
-.section-customers .clients {
+.section-customers .container-words-2 {
   width: -moz-max-content;
   width: max-content;
   display: flex;
@@ -412,12 +411,15 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.section-customers .swiper-slide {
+  width: auto !important;
+}
 .section-customers .container-words-1 {
   animation-direction: reverse;
-  animation-duration: 34s;
+  animation-duration: 44s;
 }
 .section-customers .container-words-2 {
-  animation-duration: 30s;
+  animation-duration: 38s;
 }
 .section-customers .words {
   width: -moz-max-content;

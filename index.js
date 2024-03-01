@@ -18,6 +18,17 @@ const swiperServices = new Swiper('.slick-services-home .swiper', {
 });
 
 
+const swiperClients = new Swiper('.clients.swiper', {
+    loop: true,
+    autoplay: {
+        delay: 4500, // Intervalo de tiempo en milisegundos
+    },
+    slidesPerView: 'auto', // Muestra la cantidad de slides que quepan en el contenedor
+    spaceBetween: 100,
+    centeredSlides: true,
+});
+
+
 // Slider videos
 const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,

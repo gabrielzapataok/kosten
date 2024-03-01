@@ -407,7 +407,7 @@ body {
 
         // margin-bottom: 1rem;
         .logo {
-            padding: 0 60px;
+            padding: 0 30px;
             width: auto;
             height: 55px;
         }
@@ -457,8 +457,7 @@ body {
         }
     }
     .container-words-1,
-    .container-words-2,
-    .clients {
+    .container-words-2 {
         width: max-content;
         display: flex;
         flex-wrap: nowrap;
@@ -467,12 +466,19 @@ body {
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
+    .swiper-slide {
+        width: auto !important
+    }
+    
+    .clients {
+
+    }
     .container-words-1 {
         animation-direction: reverse;
-        animation-duration: 34s;
+        animation-duration: 44s;
     }
     .container-words-2 {
-        animation-duration: 30s;
+        animation-duration: 38s;
     }
     .words {
         width: max-content;
