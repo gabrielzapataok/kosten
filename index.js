@@ -267,3 +267,21 @@ $(document).ready(function() {
         localStorage.setItem('cookies-aceptadas', true)
     })
 })
+
+
+
+$(document).ready(function(){
+    $('#getCorporateDeck').submit(function(e){
+        e.preventDefault();
+        var email = $('#emailGetCorporateDeck').val();
+        var subject = 'Get corporate deck';
+        var message = 'I want corporate deck please.';
+        var mailtoURL = 'mailto:info@kostendigital.com' +
+                        '?subject=' + encodeURIComponent(subject) +
+                        '&body=' + encodeURIComponent(message) +
+                        '&cc=' + encodeURIComponent(email);
+
+        $('#linkToMailToCorporateDeck').attr('href',mailtoURL)
+        $('#linkToMailToCorporateDeck')[0].click()
+    });
+});
