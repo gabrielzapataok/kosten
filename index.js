@@ -41,7 +41,7 @@ const swiperClients = new Swiper('.clients.swiper', {
 const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,
     speed: 500,
-    // effect: 'fade',
+    effect: 'fade',
     autoplay: {
         delay: 6500, // Intervalo de tiempo en milisegundos
     },
@@ -261,11 +261,11 @@ $(document).ready(function() {
     const cookiesBackground = $('.cookies-bg')
     if(!localStorage.getItem('cookies-aceptadas')){
         cookiesBackground.removeClass('d-none');
-        $('html').addClass('overflow-hidden')
+        // $('html').addClass('overflow-hidden')
     }
     buttonAcceptCookies.click(function() {
         cookiesBackground.addClass('d-none');
-        $('html').removeClass('overflow-hidden')
+        // $('html').removeClass('overflow-hidden')
         localStorage.setItem('cookies-aceptadas', true)
     })
 })
