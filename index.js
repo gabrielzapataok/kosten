@@ -40,7 +40,7 @@ const swiperClients = new Swiper('.clients.swiper', {
 // Slider videos
 const swiperHedaer = new Swiper('.header-slider-videos .swiper', {
     loop: true,
-    speed: 1000,
+    speed: 500,
     // effect: 'fade',
     autoplay: {
         delay: 6500, // Intervalo de tiempo en milisegundos
