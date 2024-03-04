@@ -680,4 +680,23 @@ body {
 }
 .section-legal a {
   color: white;
+}
+
+.cookies-bg {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 100;
+}
+.cookies-bg .container-cookies {
+  background-color: #ffffff;
+  width: 200px;
+  border-radius: 1rem 1rem 0 0;
+  bottom: 0;
+  position: absolute;
+  left: 1rem;
 }/*# sourceMappingURL=index.css.map */

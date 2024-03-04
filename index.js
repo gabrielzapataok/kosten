@@ -151,7 +151,6 @@ $(document).ready(function () {
     ScrollTrigger.batch('.profile', {
         start: 'top 100%',
         onEnter: batch => {
-            console.log("onEnter");
             gsap.to(batch, {
                 opacity: 1,
                 y: 0,
@@ -249,5 +248,24 @@ $(document).ready(function() {
         extraText.hide()
         readMore.show()
         readLess.hide()
+    })
+})
+
+
+
+
+
+// Cookies
+$(document).ready(function() {
+    const buttonAcceptCookies = $('.accept-cookies')
+    const cookiesBackground = $('.cookies-bg')
+    if(!localStorage.getItem('cookies-aceptadas')){
+        cookiesBackground.removeClass('d-none');
+        $('html').addClass('overflow-hidden')
+    }
+    buttonAcceptCookies.click(function() {
+        cookiesBackground.addClass('d-none');
+        $('html').removeClass('overflow-hidden')
+        localStorage.setItem('cookies-aceptadas', true)
     })
 })
