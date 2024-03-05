@@ -192,7 +192,6 @@ body {
   color: white;
   font-size: 3.75rem;
   font-weight: 200;
-  max-width: 1000px;
   padding: 1.5rem 3rem;
 }
 @media (max-width: 1000px) {
