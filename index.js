@@ -160,7 +160,10 @@ $(document).ready(function () {
 
 
 
-
+window.onload = function() {
+    // Ocultar el elemento con clase '.loading-spin' usando jQuery
+    jQuery('.loading-spin').fadeOut('slow');
+};
 
 
 $(document).ready(function () {
